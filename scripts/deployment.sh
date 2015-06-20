@@ -10,8 +10,7 @@ set -e
 
 if [ -z $APP_PATH ]
 then
-  echo "!!!!!! Please supply the path to the app to be deployed !!!!!!!!!!!!!!"
-  exit 1
+  APP_PATH=artifacts/APP_PREFIX-${BUILD_VERSION}.jar
 fi
 
 echo_msg () {
