@@ -6,7 +6,8 @@ set -e
 ## This script is based on previous version written by Matt Stine and Jamie O'Meara
 ## Author - Sufyaan Kazi - Pivotal
 
-## The following parameters must be set CF_USER CF_PASSWORD CF_ORG CF_SPACE CF_DOMAIN APP_PREFIX BUILD_VERSION SERVICE_NAME MEMORY APP_PATH INSTANCES
+## The following parameters must be set CF_USER CF_PASSWORD CF_ORG CF_SPACE CF_DOMAIN APP_PREFIX SERVICE_NAME MEMORY INSTANCES
+## Note - APP_PATH is 'hardcoded' in this script and BUILD_VERSION should come form you Jenkins Build if you set it up right!
 
 if [ -z $APP_PATH ]
   then
