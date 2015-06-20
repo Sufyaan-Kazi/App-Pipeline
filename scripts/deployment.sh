@@ -10,7 +10,7 @@ set -e
 
 if [ -z $APP_PATH ]
 then
-  APP_PATH=artifacts/APP_PREFIX-${BUILD_VERSION}.jar
+  APP_PATH=artifacts/$APP_PREFIX-${BUILD_VERSION}.jar
 fi
 
 echo_msg () {
