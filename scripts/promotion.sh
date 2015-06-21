@@ -26,7 +26,7 @@ echo_msg () {
 ## Variables used during Jenkins Build Process
 APP_NAME=$APP_PREFIX-$BUILD_VERSION
 PUBLIC_ROUTE=$(echo $CF_USER | cut -d "@" -f1)
-PUBLIC_ROUTE="$APP_PREFIX-$HOST_NAME"
+PUBLIC_ROUTE="$APP_PREFIX-$PUBLIC_ROUTE"
 UNIQUE=$PUBLIC_ROUTE-$BUILD_VERSION
 
 ## Log into PCF endpoint - Provided via Jenkins Plugin
