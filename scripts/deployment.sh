@@ -27,7 +27,6 @@ echo_msg () {
 APP_NAME=$APP_PREFIX-$BUILD_VERSION
 UNIQUE=$(echo $CF_USER | cut -d "@" -f1)
 UNIQUE="$APP_PREFIX-$UNIQUE"
-echo $UNIQUE
 HOST_NAME=$UNIQUE-$BUILD_VERSION
 
 ## Log into PCF endpoint - Provided via Jenkins Plugin
